@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA75DF152D74704D00ACA8EB /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = AA75DF142D74704D00ACA8EB /* NIO */; };
+		AA75DF172D74704D00ACA8EB /* NIOHTTP1 in Frameworks */ = {isa = PBXBuildFile; productRef = AA75DF162D74704D00ACA8EB /* NIOHTTP1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA75DF1A2D74757C00ACA8EB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Library/LaunchDaemons;
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA75DF332D74837D00ACA8EB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Scripts;
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA75DF012D746D0500ACA8EB /* ACCpromAdapterDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ACCpromAdapterDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		AA75DF1C2D74759B00ACA8EB /* Exceptions for "ACCpromAdapterDaemon" folder in "Copy Files" phase from "ACCpromAdapterDaemon" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				de.cstrube.ACCpromAdapterDaemon.plist = (CodeSignOnCopy, );
+			};
+			buildPhase = AA75DF1A2D74757C00ACA8EB /* CopyFiles */;
+			membershipExceptions = (
+				de.cstrube.ACCpromAdapterDaemon.plist,
+			);
+		};
+		AA75DF412D748B8C00ACA8EB /* Exceptions for "Packaging" folder in "Copy Files" phase from "ACCpromAdapterDaemon" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				Scripts/install_daemon.sh = (CodeSignOnCopy, );
+				Scripts/unstall_daemon.sh = (CodeSignOnCopy, );
+			};
+			buildPhase = AA75DF332D74837D00ACA8EB /* CopyFiles */;
+			membershipExceptions = (
+				Scripts/install_daemon.sh,
+				Scripts/unstall_daemon.sh,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AA75DF032D746D0500ACA8EB /* ACCpromAdapterDaemon */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AA75DF1C2D74759B00ACA8EB /* Exceptions for "ACCpromAdapterDaemon" folder in "Copy Files" phase from "ACCpromAdapterDaemon" target */,
+			);
+			path = ACCpromAdapterDaemon;
+			sourceTree = "<group>";
+		};
+		AA75DF3E2D748B8C00ACA8EB /* Packaging */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AA75DF412D748B8C00ACA8EB /* Exceptions for "Packaging" folder in "Copy Files" phase from "ACCpromAdapterDaemon" target */,
+			);
+			path = Packaging;
+			sourceTree = "<group>";
+		};
+		AA75DF532D74B54C00ACA8EB /* Release */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Release;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA75DEFE2D746D0500ACA8EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA75DF152D74704D00ACA8EB /* NIO in Frameworks */,
+				AA75DF172D74704D00ACA8EB /* NIOHTTP1 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA75DEF82D746D0500ACA8EB = {
+			isa = PBXGroup;
+			children = (
+				AA75DF532D74B54C00ACA8EB /* Release */,
+				AA75DF032D746D0500ACA8EB /* ACCpromAdapterDaemon */,
+				AA75DF022D746D0500ACA8EB /* Products */,
+				AA75DF3E2D748B8C00ACA8EB /* Packaging */,
+			);
+			sourceTree = "<group>";
+		};
+		AA75DF022D746D0500ACA8EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA75DF012D746D0500ACA8EB /* ACCpromAdapterDaemon */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA75DF002D746D0500ACA8EB /* ACCpromAdapterDaemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA75DF082D746D0500ACA8EB /* Build configuration list for PBXNativeTarget "ACCpromAdapterDaemon" */;
+			buildPhases = (
+				AA75DEFD2D746D0500ACA8EB /* Sources */,
+				AA75DEFE2D746D0500ACA8EB /* Frameworks */,
+				AA75DF1A2D74757C00ACA8EB /* CopyFiles */,
+				AA75DF332D74837D00ACA8EB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AA75DF032D746D0500ACA8EB /* ACCpromAdapterDaemon */,
+				AA75DF3E2D748B8C00ACA8EB /* Packaging */,
+				AA75DF532D74B54C00ACA8EB /* Release */,
+			);
+			name = ACCpromAdapterDaemon;
+			packageProductDependencies = (
+				AA75DF142D74704D00ACA8EB /* NIO */,
+				AA75DF162D74704D00ACA8EB /* NIOHTTP1 */,
+			);
+			productName = ACCpromAdapterDaemon;
+			productReference = AA75DF012D746D0500ACA8EB /* ACCpromAdapterDaemon */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA75DEF92D746D0500ACA8EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					AA75DF002D746D0500ACA8EB = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = AA75DEFC2D746D0500ACA8EB /* Build configuration list for PBXProject "ACCpromAdapterDaemon" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA75DEF82D746D0500ACA8EB;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AA75DF132D74704D00ACA8EB /* XCRemoteSwiftPackageReference "swift-nio" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AA75DF022D746D0500ACA8EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA75DF002D746D0500ACA8EB /* ACCpromAdapterDaemon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA75DEFD2D746D0500ACA8EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA75DF062D746D0500ACA8EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA75DF072D746D0500ACA8EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AA75DF092D746D0500ACA8EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ACCpromAdapterDaemon/ACCpromAdapterDaemon.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73SP5UXC3Q;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.cstrube.ACCpromAdapterDaemon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA75DF0A2D746D0500ACA8EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ACCpromAdapterDaemon/ACCpromAdapterDaemon.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73SP5UXC3Q;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.cstrube.ACCpromAdapterDaemon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA75DEFC2D746D0500ACA8EB /* Build configuration list for PBXProject "ACCpromAdapterDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA75DF062D746D0500ACA8EB /* Debug */,
+				AA75DF072D746D0500ACA8EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA75DF082D746D0500ACA8EB /* Build configuration list for PBXNativeTarget "ACCpromAdapterDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA75DF092D746D0500ACA8EB /* Debug */,
+				AA75DF0A2D746D0500ACA8EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA75DF132D74704D00ACA8EB /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.81.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA75DF142D74704D00ACA8EB /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA75DF132D74704D00ACA8EB /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		AA75DF162D74704D00ACA8EB /* NIOHTTP1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA75DF132D74704D00ACA8EB /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOHTTP1;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AA75DEF92D746D0500ACA8EB /* Project object */;
+}
