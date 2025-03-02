@@ -34,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		AA75DF012D746D0500ACA8EB /* ACCpromAdapterDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ACCpromAdapterDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA75DF7F2D74C6FD00ACA8EB /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
@@ -101,6 +102,7 @@
 		AA75DEF82D746D0500ACA8EB = {
 			isa = PBXGroup;
 			children = (
+				AA75DF7F2D74C6FD00ACA8EB /* README.MD */,
 				AA75DF532D74B54C00ACA8EB /* Release */,
 				AA75DF032D746D0500ACA8EB /* ACCpromAdapterDaemon */,
 				AA75DF022D746D0500ACA8EB /* Products */,
