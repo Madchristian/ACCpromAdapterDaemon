@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>de.cstrube.ACCpromAdapterDaemon</string>
+
+    <!-- Automatisch beim Boot starten -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Neustart falls der Prozess abstürzt -->
+    <key>KeepAlive</key>
+    <true/>
+
+    <!-- Hier wird die ausführbare Datei referenziert -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/ACCpromAdapterDaemon</string>
+    </array>
+
+    <!-- Optional: Logs aktivieren (Fehlerausgabe) -->
+    <key>StandardErrorPath</key>
+    <string>/var/log/ACCpromAdapterDaemon.err.log</string>
+    <key>StandardOutPath</key>
+    <string>/var/log/ACCpromAdapterDaemon.out.log</string>
+</dict>
+</plist>
