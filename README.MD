@@ -49,16 +49,18 @@ sudo launchctl load /Library/LaunchDaemons/de.cstrube.ACCpromAdapterDaemon.plist
 sudo launchctl start de.cstrube.ACCpromAdapterDaemon
 ```
 
-    3.    Uninstallation:
+3.    Uninstallation:
     •    To remove the daemon, use:
+
 ```bash
 sudo launchctl unload /Library/LaunchDaemons/de.cstrube.ACCpromAdapterDaemon.plist
 sudo rm /Library/LaunchDaemons/de.cstrube.ACCpromAdapterDaemon.plist
 sudo rm /usr/local/bin/ACCpromAdapterDaemon
 ```
 
+or use the install_daemon.sh and uninstall_daemon.sh scripts provided in the release section
 
-Configuration
+### Configuration
     •    HTTP Port: The daemon listens on port 9200 by default. This can be modified in the source code if needed.
     •    Metrics Database Path: The daemon expects the Metrics database to be located at:
 
