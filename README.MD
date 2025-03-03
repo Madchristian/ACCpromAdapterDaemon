@@ -32,17 +32,17 @@ An installation package (`.pkg`) can be generated using the provided shell scrip
 ```
 
 This script will:
-    •    Create a staging directory.
-    •    Copy the daemon binary to a designated installation folder (e.g. /usr/local/bin).
-    •    Copy the LaunchDaemon property list to /Library/LaunchDaemons.
-    •    Build a signed installer package (ACCpromAdapterDaemon.pkg).
+•   Create a staging directory.
+•   Copy the daemon binary to a designated installation folder (e.g. /usr/local/bin).
+•   Copy the LaunchDaemon property list to /Library/LaunchDaemons.
+•   Build a signed installer package (ACCpromAdapterDaemon.pkg).
 
 Installation on a macOS System
-    1.    Install the Package:
-    •    Double-click the generated ACCpromAdapterDaemon.pkg to launch the Installer.
-    •    Follow the on-screen instructions to install the daemon.
-    2.    Load the Daemon:
-    •    Open Terminal and run:
+1.  Install the Package:
+•   Double-click the generated ACCpromAdapterDaemon.pkg to launch the Installer.
+•   Follow the on-screen instructions to install the daemon.
+2.  Load the Daemon:
+•   Open Terminal and run:
 
 ```bash
 sudo launchctl load /Library/LaunchDaemons/de.cstrube.ACCpromAdapterDaemon.plist
