@@ -48,18 +48,6 @@
 				de.cstrube.ACCpromAdapterDaemon.plist,
 			);
 		};
-		AA75DF412D748B8C00ACA8EB /* Exceptions for "Packaging" folder in "Copy Files" phase from "ACCpromAdapterDaemon" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			attributesByRelativePath = {
-				Scripts/install_daemon.sh = (CodeSignOnCopy, );
-				Scripts/unstall_daemon.sh = (CodeSignOnCopy, );
-			};
-			buildPhase = AA75DF332D74837D00ACA8EB /* CopyFiles */;
-			membershipExceptions = (
-				Scripts/install_daemon.sh,
-				Scripts/unstall_daemon.sh,
-			);
-		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -73,9 +61,6 @@
 		};
 		AA75DF3E2D748B8C00ACA8EB /* Packaging */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				AA75DF412D748B8C00ACA8EB /* Exceptions for "Packaging" folder in "Copy Files" phase from "ACCpromAdapterDaemon" target */,
-			);
 			path = Packaging;
 			sourceTree = "<group>";
 		};

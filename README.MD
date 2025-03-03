@@ -29,6 +29,7 @@ An installation package (`.pkg`) can be generated using the provided shell scrip
 
 ```bash
 ./generatePackage.zsh
+```
 
 This script will:
     •    Create a staging directory.
@@ -43,17 +44,18 @@ Installation on a macOS System
     2.    Load the Daemon:
     •    Open Terminal and run:
 
+```bash
 sudo launchctl load /Library/LaunchDaemons/de.cstrube.ACCpromAdapterDaemon.plist
 sudo launchctl start de.cstrube.ACCpromAdapterDaemon
-
+```
 
     3.    Uninstallation:
     •    To remove the daemon, use:
-
+```bash
 sudo launchctl unload /Library/LaunchDaemons/de.cstrube.ACCpromAdapterDaemon.plist
 sudo rm /Library/LaunchDaemons/de.cstrube.ACCpromAdapterDaemon.plist
 sudo rm /usr/local/bin/ACCpromAdapterDaemon
-
+```
 
 
 Configuration
@@ -77,6 +79,14 @@ Logging and Debugging
 The daemon uses Apple’s os.Logger to log important events and errors. These logs can be viewed using the Console.app:
     •    Look for logs under the subsystem de.cstrube.ACCpromAdapterDaemon.
     •    Common log messages include startup, successful metric updates, and error messages if the Metrics.db cannot be read.
+```bash
+log stream --predicate 'subsystem == "de.cstrube.ACCpromAdapterDaemon"' --info
+```
+
+or
+```bash
+log stream --predicate 'subsystem == "de.cstrube.ACCpromAdapterDaemon" AND eventType == logEvent' --debug
+```
 
 Troubleshooting
     •    No Metrics Output: Verify that the Metrics.db file exists and is readable by the daemon.
