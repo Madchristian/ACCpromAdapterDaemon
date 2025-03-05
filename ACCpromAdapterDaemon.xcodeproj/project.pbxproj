@@ -21,23 +21,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA75DF332D74837D00ACA8EB /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Scripts;
-			dstSubfolderSpec = 1;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA1DBAC02D78EFD3008135FF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AA75DF012D746D0500ACA8EB /* ACCpromAdapterDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ACCpromAdapterDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA75DF7F2D74C6FD00ACA8EB /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		AA1DBABF2D78EF4C008135FF /* Exceptions for "Packaging" folder in "Compile Sources" phase from "ACCpromAdapterDaemon" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = AA75DEFD2D746D0500ACA8EB /* Sources */;
+			membershipExceptions = (
+				.env,
+			);
+		};
 		AA75DF1C2D74759B00ACA8EB /* Exceptions for "ACCpromAdapterDaemon" folder in "Copy Files" phase from "ACCpromAdapterDaemon" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			attributesByRelativePath = {
@@ -61,12 +60,15 @@
 		};
 		AA75DF3E2D748B8C00ACA8EB /* Packaging */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AA1DBABF2D78EF4C008135FF /* Exceptions for "Packaging" folder in "Compile Sources" phase from "ACCpromAdapterDaemon" target */,
+			);
 			path = Packaging;
 			sourceTree = "<group>";
 		};
-		AA75DF532D74B54C00ACA8EB /* Release */ = {
+		AA75DF532D74B54C00ACA8EB /* Scripts */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Release;
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -87,8 +89,9 @@
 		AA75DEF82D746D0500ACA8EB = {
 			isa = PBXGroup;
 			children = (
+				AA1DBAC02D78EFD3008135FF /* .gitignore */,
 				AA75DF7F2D74C6FD00ACA8EB /* README.MD */,
-				AA75DF532D74B54C00ACA8EB /* Release */,
+				AA75DF532D74B54C00ACA8EB /* Scripts */,
 				AA75DF032D746D0500ACA8EB /* ACCpromAdapterDaemon */,
 				AA75DF022D746D0500ACA8EB /* Products */,
 				AA75DF3E2D748B8C00ACA8EB /* Packaging */,
@@ -113,7 +116,6 @@
 				AA75DEFD2D746D0500ACA8EB /* Sources */,
 				AA75DEFE2D746D0500ACA8EB /* Frameworks */,
 				AA75DF1A2D74757C00ACA8EB /* CopyFiles */,
-				AA75DF332D74837D00ACA8EB /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -122,7 +124,7 @@
 			fileSystemSynchronizedGroups = (
 				AA75DF032D746D0500ACA8EB /* ACCpromAdapterDaemon */,
 				AA75DF3E2D748B8C00ACA8EB /* Packaging */,
-				AA75DF532D74B54C00ACA8EB /* Release */,
+				AA75DF532D74B54C00ACA8EB /* Scripts */,
 			);
 			name = ACCpromAdapterDaemon;
 			packageProductDependencies = (

@@ -1,0 +1,14 @@
+# Xcode spezifische Dateien
+*.xcworkspace
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcuserdatad/
+*.xcassets/
+
+# Build-Ordner
+build/
+DerivedData/
+.DS_Store
+
+# Umgebungsvariablen-Dateien
+.env
