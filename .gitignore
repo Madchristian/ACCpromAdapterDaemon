@@ -12,3 +12,4 @@ DerivedData/
 
 # Umgebungsvariablen-Dateien
 .env
+*.xcodeproj/xcuserdata/
