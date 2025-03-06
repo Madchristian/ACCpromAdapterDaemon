@@ -1,0 +1,51 @@
+# This workflow will build a Swift project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
+name: Swift CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        xcode: ["15.0", "15.1"]  # Falls du verschiedene Xcode-Versionen testen möchtest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set Xcode version
+      run: sudo xcode-select -switch /Applications/Xcode_${{ matrix.xcode }}.app
+
+    - name: Cache Swift dependencies
+      uses: actions/cache@v3
+      with:
+        path: .build
+        key: ${{ runner.os }}-swift-${{ hashFiles('Package.resolved') }}
+        restore-keys: |
+          ${{ runner.os }}-swift-
+
+    - name: Build project
+      run: swift build -v
+
+    - name: Run tests
+      run: swift test -v
+
+    - name: Archive test results
+      if: failure()
+      run: |
+        mkdir -p test-results
+        cp -r .build/debug/test-results test-results/
+
+    - name: Upload test results
+      if: failure()
+      uses: actions/upload-artifact@v3
+      with:
+        name: swift-test-results
+        path: test-results/
