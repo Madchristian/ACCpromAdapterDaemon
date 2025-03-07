@@ -95,6 +95,8 @@ Troubleshooting
     •    Port Conflicts: If port 9200 is already in use, either free the port or change the listening port in the source code.
     •    Permissions Issues: Ensure that the daemon is running with the necessary permissions to read /Library/Application Support/Apple/AssetCache/Metrics/Metrics.db.
 
+Get more: https://blog.cstrube.de/posts/Apple-Content-Cache-Grafana-Dashboard/
+
 Contributing
 
 Contributions are welcome! Please fork this repository and submit your pull requests with detailed descriptions of your changes.
