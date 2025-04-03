@@ -50,7 +50,7 @@ sudo launchctl start de.cstrube.ACCpromAdapterDaemon
 ```
 
 3.    Uninstallation:
-    •    To remove the daemon, use:
+•    To remove the daemon, use:
 
 ```bash
 sudo launchctl unload /Library/LaunchDaemons/de.cstrube.ACCpromAdapterDaemon.plist
@@ -61,8 +61,8 @@ sudo rm /usr/local/bin/ACCpromAdapterDaemon
 or use the install_daemon.sh and uninstall_daemon.sh scripts provided in the release section
 
 ### Configuration
-    •    HTTP Port: The daemon listens on port 9200 by default. This can be modified in the source code if needed.
-    •    Metrics Database Path: The daemon expects the Metrics database to be located at:
+•    HTTP Port: The daemon listens on port 9200 by default. This can be modified in the source code if needed.
+•    Metrics Database Path: The daemon expects the Metrics database to be located at:
 
 /Library/Application Support/Apple/AssetCache/Metrics/Metrics.db
 
@@ -79,8 +79,8 @@ You can verify by opening this URL in your browser or configuring a Prometheus s
 Logging and Debugging
 
 The daemon uses Apple’s os.Logger to log important events and errors. These logs can be viewed using the Console.app:
-    •    Look for logs under the subsystem de.cstrube.ACCpromAdapterDaemon.
-    •    Common log messages include startup, successful metric updates, and error messages if the Metrics.db cannot be read.
+•    Look for logs under the subsystem de.cstrube.ACCpromAdapterDaemon.
+•    Common log messages include startup, successful metric updates, and error messages if the Metrics.db cannot be read.
 ```bash
 log stream --predicate 'subsystem == "de.cstrube.ACCpromAdapterDaemon"' --info
 ```
@@ -91,9 +91,9 @@ log stream --predicate 'subsystem == "de.cstrube.ACCpromAdapterDaemon" AND event
 ```
 
 Troubleshooting
-    •    No Metrics Output: Verify that the Metrics.db file exists and is readable by the daemon.
-    •    Port Conflicts: If port 9200 is already in use, either free the port or change the listening port in the source code.
-    •    Permissions Issues: Ensure that the daemon is running with the necessary permissions to read /Library/Application Support/Apple/AssetCache/Metrics/Metrics.db.
+•    No Metrics Output: Verify that the Metrics.db file exists and is readable by the daemon.
+•    Port Conflicts: If port 9200 is already in use, either free the port or change the listening port in the source code.
+•    Permissions Issues: Ensure that the daemon is running with the necessary permissions to read /Library/Application Support/Apple/AssetCache/Metrics/Metrics.db.
 
 Get more: https://blog.cstrube.de/posts/Apple-Content-Cache-Grafana-Dashboard/
 
