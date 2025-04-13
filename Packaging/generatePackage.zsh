@@ -49,6 +49,6 @@ echo "📦 Erstelle Installationspaket: $PKG_OUTPUT_PATH"
 pkgbuild --root "$STAGING_DIRECTORY" \
          --identifier "$IDENTIFIER" \
          --version "$VERSION" \
-         --sign "Developer ID Installer: ***" \
-         "$PKG_OUTPUT_PATH" --verbose
+         --sign "Developer ID Installer: Christian Strube (73SP5UXC3Q)" \
+         "$PKG_OUTPUT_PATH" --debug
 echo "✅ Installationspaket erfolgreich erstellt: $PKG_OUTPUT_PATH"
